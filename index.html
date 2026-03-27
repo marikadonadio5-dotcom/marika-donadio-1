@@ -1,223 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Silvae – Silk Cream</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Presentation - Silvae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header id="home">
-  <div class="hero-bg">
-    <div class="hero-gradient"></div>
-    <div class="hero-pattern"></div>
-  </div>
+    <header class="topbar container-fluid justify-content-end">
+        <nav class="quick-nav">
+          <a href="#slide-1">1</a>
+          <a href="#slide-2">2</a>
+          <a href="#slide-3">3</a>
+          <a href="#slide-4">4</a>
+          <a href="#slide-5">5</a>
+          <a href="#slide-6">6</a>
+          <a href="#slide-7">7</a>
+          <a href="#slide-8">8</a>
+        </nav>
+    </header>
   
-  <nav class="nav">
-    <div class="logo">Silvae</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#formula">Formula</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#preorder" class="nav-cta">Preorder</a></li>
-    </ul>
-  </nav>
-
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        <span>New Release 2026</span>
-      </div>
-      <h1>Silk<br><span>Cream</span></h1>
-      <p class="hero-subtitle">Discover the secret of flawless skin with our revolutionary formula enriched with natural ingredients.</p>
-      <div class="hero-actions">
-        <a href="#preorder" class="btn btn-primary">
-          <span>Discover Now</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-        <a href="#formula" class="btn btn-ghost">Learn More</a>
-      </div>
-      
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">98%</span>
-          <span class="stat-label">Natural</span>
+    <main class="slides" aria-label="Horizontal presentation">
+      <section id="slide-1" class="slide intro">
+        <div class="text-block">
+          <span class="section-tag">Technical Analysis</span>
+          <h1>Silvae<br><span>website architecture</span></h1>
+          <p class="lead">An overview of the website's main architectural components: first-scroll structure, sticky navigation bar, product card, visual grid, and final conversion CTA.</p>
+          <ul>
+            <li>Visual consistency with the original palette and fonts</li>
+            <li>Premium experience with a responsive layout</li>
+            <li>Lightweight interactions</li>
+          </ul>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">5K+</span>
-          <span class="stat-label">Reviews</span>
+        <div class="media-block img-fluid">
+          <img src="images/first_scroll.png" alt="Silvae first-scroll preview">
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">30</span>
-          <span class="stat-label">Days Trial</span>
+        <div class="slide-nav">
+          <a class="btn ghost disabled" href="#slide-1" aria-disabled="true">Back</a>
+          <a class="btn primary" href="#slide-2">Next</a>
         </div>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="product-card">
-        <div class="card-image">
-          <img src="images/nourishing-face-cream.png" alt="Silk Cream">
+      </section>
+  
+      <section id="slide-2" class="slide">
+        <div class="text-block">
+          <span class="section-tag">First Scroll</span>
+          <h2>Two-column hero layout</h2>
+          <p>The first viewport uses a 1fr / 1fr composition: editorial content and CTAs on the left, featured product on the right. Visual hierarchy and contrast guide reading immediately.</p>
+          <ul>
+            <li>Full-height section with immediate impact</li>
+            <li>Display typography for headline and key metrics</li>
+            <li>Clear separation between primary and secondary CTAs</li>
+          </ul>
         </div>
-        
-        <div class="card-content">
-          <span class="card-tag">what's new</span>
-          <h3>Silk Cream</h3>
-          <p class="card-desc">Premium hand cream with natural argan oil and goji extract for silky smooth skin.</p>
-          
-          <div class="card-details">
-            <div class="detail-item">
-              <h4>Formula</h4>
-              <p>98% natural ingredients sourced from organic farms.</p>
-            </div>
-            <div class="detail-item">
-              <h4>Benefits</h4>
-              <p>Deep hydration, repair and antioxidant protection.</p>
-            </div>
-            <div class="detail-item">
-              <h4>Certified</h4>
-              <p>Dermatologist tested, vegan & cruelty-free.</p>
-            </div>
-          </div>
-          
-          <div class="card-footer">
-            <span class="card-price">€49</span>
-            <a href="#preorder" class="card-btn">Add to Waitlist</a>
+        <div class="media-block img-fluid">
+          <img class="" src="images/first_scroll.png" alt="First-scroll layout">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-1">Back</a>
+          <a class="btn primary" href="#slide-3">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-3" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Navigation Pattern</span>
+          <h2>Sticky navbar with blur</h2>
+          <p>The navigation remains fixed at the top and uses a semi-transparent blurred background. This preserves orientation and section access during scrolling without breaking context.</p>
+          <ul>
+            <li>Fixed positioning for constant accessibility</li>
+            <li>Improved readability on variable backgrounds</li>
+            <li>Highlighted call-to-action in the menu</li>
+          </ul>
+          <div class="media-block narrow  img-fluid">
+            <img src="images/sticky_navbar.png" alt="Sticky navbar detail">
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-</header>
-
-<section id="formula" class="formula">
-  <div class="section-header">
-    <span class="section-tag">Ingredients</span>
-    <h2>The Formula</h2>
-    <p class="section-subtitle">Carefully selected natural ingredients for your skin</p>
-  </div>
+       
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-2">Back</a>
+          <a class="btn primary" href="#slide-4">Next</a>
+        </div>
+      </section>
   
-  <div class="formula-content">
-    <div class="formula-visual">
-      <img src="images/dynamic-milk-splash-creamy-white-liquid-art_191095-84656.jpg copia.png" alt="Cream texture">
-    </div>
-    
-    <div class="formula-breakdown">
-      <div class="ingredient">
-        <div class="ingredient-header">
-          <span class="ingredient-name">Argan Oil</span>
-          <span class="ingredient-percent">38%</span>
+      <section id="slide-4" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Component Design</span>
+          <h2>Modular product card</h2>
+          <p>The card combines image, product attributes, and pricing in one reusable block. The micro-interaction system strengthens premium perception without overloading the UI.</p>
+          <ul>
+            <li>Block structure (tag, description, details, footer)</li>
+            <li>CSS hover animations (lift and scale)</li>
+            <li>High contrast for readability and focus</li>
+          </ul>
         </div>
-        <div class="progress-bar">
-          <div class="progress-fill" style="--progress: 38%"></div>
+        <div class="media-block ">
+          <img src="images/product_card.png" alt="Product card detail">
         </div>
-        <p class="ingredient-benefit">Deep nourishment & repair</p>
-      </div>
-      
-      <div class="ingredient">
-        <div class="ingredient-header">
-          <span class="ingredient-name">Shea Butter</span>
-          <span class="ingredient-percent">32%</span>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-3">Back</a>
+          <a class="btn primary" href="#slide-5">Next</a>
         </div>
-        <div class="progress-bar">
-          <div class="progress-fill" style="--progress: 32%"></div>
+      </section>
+  
+      <section id="slide-5" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Grid System</span>
+          <h2>Responsive grid layout</h2>
+          <p>Main sections use CSS Grid to distribute informational and visual content. The design shifts to a single column at smaller breakpoints while preserving narrative clarity.</p>
+          <ul>
+            <li>Desktop grid balances text and imagery</li>
+            <li>Mobile adaptation prioritizes content flow</li>
+            <li>Spacing controlled through global variables</li>
+          </ul>
         </div>
-        <p class="ingredient-benefit">Intense hydration & softness</p>
-      </div>
-      
-      <div class="ingredient">
-        <div class="ingredient-header">
-          <span class="ingredient-name">Goji Extract</span>
-          <span class="ingredient-percent">30%</span>
+        <div class="media-block">
+          <img src="images/grid_layout.png" alt="Website grid layout scheme">
         </div>
-        <div class="progress-bar">
-          <div class="progress-fill" style="--progress: 30%"></div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-4">Back</a>
+          <a class="btn primary" href="#slide-6">Next</a>
         </div>
-        <p class="ingredient-benefit">Antioxidant protection</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="about">
-  <div class="about-grid">
-    <div class="about-text">
-      <span class="section-tag">Who We Are</span>
-      <h2>About Silvae</h2>
-      
-      <div class="about-values">
-        <div class="value-item">
-          <h4>Brand</h4>
-          <p>A <b>nature-driven </b> luxury skincare brand devoted to absolute purity, refined textures and serene rituals. Thoughtfully crafted formulas elevate natural ingredients into <b>sensorial experiences</b>, designed to nurture the skin with discretion and harmony. Each gesture becomes an intimate moment of calm, where skincare transforms into a quiet expression of <b>balance, refinement and timeless well-being</b>.</p>
+      </section>
+  
+      <section id="slide-6" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Visual Layer</span>
+          <h2>Background pattern and depth</h2>
+          <p>Radial gradients and an SVG overlay pattern add depth without heavy hero images. The result is an elegant texture aligned with the brand's tone.</p>
+          <ul>
+            <li>CSS layering with multiple gradients</li>
+            <li>Lightweight inline vector pattern</li>
+            <li>Fine control of opacity and contrast</li>
+          </ul>
         </div>
-        <div class="value-item">
-          <h4>Values</h4>
-          <p>Guided by a deep commitment to <b>sustainability, honesty and respect for origins</b>, the brand honors nature through <b>responsible choices and transparent practices</b>. Each ingredient is selected with care, preserving its integrity and provenance, while every process reflects a conscious balance between refinement and responsibility. True luxury lies in integrity, where beauty is rooted in <b>respect, authenticity and long-lasting harmony with the natural world.</b></p>
+        <div class="media-block ">
+          <img src="images/background_pattern.png" alt="Background graphic pattern example">
         </div>
-        <div class="value-item">
-          <h4>Mission</h4>
-          <p>To create timeless skincare products that feel truly <b>essential, crafted with purpose, restraint and respect </b> for nature. Each formula is designed to endure beyond trends, offering understated effectiveness, sensorial elegance and a lasting sense of balance, transforming simplicity into a refined, <b>everyday luxury.</b></p>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-5">Back</a>
+          <a class="btn primary" href="#slide-7">Next</a>
         </div>
-      </div>
-    </div>
-    
-    <div class="about-gallery">
-      <div class="gallery-item gallery-large">
-        <img src="images/9c200993024d976f0693f1afe625e61f.jpg" alt="Silvae lifestyle">
-      </div>
-      <div class="gallery-item">
-        <img src="images/a1432b16fcdc23ef39544dea4ac33757.jpg" alt="Natural ingredients">
-      </div>
-      <div class="gallery-item">
-        <img src="images/c7ab7b855e104f532c3e8fc6e9ef557b.jpg" alt="Skincare ritual">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="preorder" class="preorder">
-  <div class="preorder-content">
-    <span class="section-tag">Limited Edition</span>
-    <h2>Be the First</h2>
-    <p>Join our waitlist and be among the first to experience Silk Cream.</p>
-    
-    <form class="preorder-form">
-      <input type="email" placeholder="Enter your email" class="email-input">
-      <button type="submit" class="btn btn-primary">Notify Me</button>
-    </form>
-    
-    <p class="preorder-note">No spam. Unsubscribe anytime.</p>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-brand">
-      <span class="logo">Silvae</span>
-      <p>Nature-driven skincare</p>
-    </div>
-    <div class="footer-links">
-      <a href="#home">Home</a>
-      <a href="#formula">Formula</a>
-      <a href="#about">About</a>
-      <a href="#preorder">Preorder</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Silvae. All rights reserved.</p>
-  </div>
-</footer>
-
-</body>
+      </section>
+  
+      <section id="slide-7" class="slide">
+        <div class="text-block">
+          <span class="section-tag">Data Visualization</span>
+          <h2>Ingredient progress bars</h2>
+          <p>Formula percentages are rendered with CSS bars and custom properties (`--progress`). This approach cleanly separates content and presentation while keeping markup simple.</p>
+          <ul>
+            <li>CSS variables for fast configuration</li>
+            <li>Width animation for visual feedback</li>
+            <li>Easily reusable pattern across sections</li>
+          </ul>
+        </div>
+        <div class=" d-flex justify-content-center align-items-center gap-3">
+          <img class="medias" src="images/progress.png" alt="Progress bars in the layout">
+          <img class="medias" src="images/progress_in_CSS.png" alt="CSS implementation of progress bars">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-6">Back</a>
+          <a class="btn primary" href="#slide-8">Next</a>
+        </div>
+      </section>
+  
+      <section id="slide-8" class="slide outro">
+        <div class="text-block">
+          <span class="section-tag">Conversion Focus</span>
+          <h2>Waitlist and code identification</h2>
+          <p>The funnel ends with a simple email form and immediate call to action. The project identification block (`code_id`) supports traceability and technical coherence.</p>
+          <ul>
+            <li>Final call-to-action focused on conversion</li>
+            <li>Minimal form to reduce friction</li>
+            <li>Narrative closure of the user journey</li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <img class="medias-negative" src="images/waitlist.png" alt="Final waitlist section">
+          <img class="medias-negative" src="images/code_id.png" alt="Code ID identifying element">
+        </div>
+        <div class="slide-nav">
+          <a class="btn ghost" href="#slide-7">Back</a>
+          <a class="btn primary" href="#slide-1">Restart</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
